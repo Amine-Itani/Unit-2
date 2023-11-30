@@ -6,7 +6,7 @@
 
 ## Problem definition
 
-A student at an international boarding school notices that he is quite sensitive to the temperature of his room while he sleep. If it's too hot, he can not sleep, but if it's too cold, he falls ill. Although the student believes that opening the window affects the temperature strongly (due to his school being at a high altitude), his roommates do not believe him, so he wants the data to prove them wrong. He is also worried about losing his data as his computer is prone to crashing, therefore he wants to save it to a cloud as a backup.
+A student at an international boarding school notices that he is quite sensitive to the temperature of his room while he sleeps. If it's too hot, he can not sleep, but if it's too cold, he falls ill. Although the student believes that opening the window affects the temperature strongly (due to his school being at a high altitude), his roommates do not believe him, so he wants the data to prove them wrong. He has asked for the humidity data as well, just in case there might be a correlation. He is also worried about losing his data as his computer is prone to crashing, therefore he wants to save it to a cloud as a backup.
 
 ## Proposed Solution
 Considering the client requirements an adequate solution includes a low cost sensing device for humidity and temperature and a custom data script that process and anaysis the samples acquired. For a low cost sensing device an adequate alternative is the DHT11 sensor[^1] which is offered online for less than 5 USD and provides adequare precision and range for the client requirements (Temperature Range: 0°C to 50°C, Humidity Range: 20% to 90%). Similar devices such as the DHT22, AHT20 or the AM2301B [^2] have higher specifications, however the DHT11 uses a simple serial communication (SPI) rather than more eleborated protocols such as the I2C used by the alternatives. For the range, precision and accuracy required in this applicaiton the DHT11 provides the best compromise. Connecting the DHT11 sensor to a computer requires a device that provides a Serial Port communication. A cheap and often used alternative for prototyping is the Arduino UNO microcontroller [^3]. "Arduino is an open-source electronics platform based on easy-to-use hardware and software"[^4]. In additon to the low cost of the Arduino (< 6USD), this devide is programable and expandable[^1]. Other alternatives include diffeerent versions of the original Arduino but their size and price make them a less adequate solution.
@@ -43,23 +43,27 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 
 # Criteria B: Design
 
-## System Diagram **SL**
-
-![SL](https://github.com/comsci-uwc-isak/unit2_2023/assets/53995212/6161f2f6-67c5-4742-9961-e46475376370)
-
-**Fig.1** shows the system diagram for the proposed solution (**SL**). The indoor variables will be measured using an Arduino microprocessor and one sensor DHT11 conencted to the local computer (Laptop) located inside a room. The outdoor variables will be requested to the remote server using a GET request to the API of the server at ```192.168.6.153/readings```. The local values are stored in a CSV database locally.
-
+## System Diagram **HL**
 
 ![HL](https://github.com/comsci-uwc-isak/unit2_2023/assets/53995212/4891d5e9-b8ab-46ed-bd75-b606e25e3383)
 
-**Fig.2** shows the system diagram for the proposed solution (**HL**). The indoor variables will be measured using an Arduino and three DHT11 sensors located inside a room. Three sensors are used to determine more precisely the physical values and include measurement uncertainty. The outdoor variables will be requested to the remote server using a GET request to the API of the server at ```192.168.6.153/readings```. The local values are stored in a CSV database locally and a backup copy will be store in the remote server using the **Weather API**. 
+<sub>**Fig. 1** shows the system diagram for the proposed solution (**HL**). The indoor variables will be measured using an Arduino and three DHT11 sensors located inside a room. Three sensors are used to determine more precisely the physical values and include measurement uncertainty. The outdoor variables will be requested to the remote server using a GET request to the API of the server at ```192.168.6.153/readings```. The local values are stored in a CSV database locally and a backup copy will be store in the remote server using the **Weather API**.</sub>
 
 
 ## Record of Tasks
-| Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
-|---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1       | Write the Problem context                        | 10min         | Nov 22                 | A         |
-
+| **Task No** |      **Planned Action**     |                                                                             **Planned Outcome**                                                                            | **Time Estimate** | **Target Completion Date** | **Criterion** |
+|:-----------:|:---------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|-------------------|----------------------------|---------------|
+|      1      | Write the problem defintion | The problem definition concerning what the client is looking for, and why they need temperature and humidity measurements, and why they needed them uploaded to the cloud. | 10 min            | November 29                | A             |
+|      2      |                             |                                                                                                                                                                            |                   |                            |               |
+|      3      |                             |                                                                                                                                                                            |                   |                            |               |
+|      4      |                             |                                                                                                                                                                            |                   |                            |               |
+|      5      |                             |                                                                                                                                                                            |                   |                            |               |
+|      6      |                             |                                                                                                                                                                            |                   |                            |               |
+|      7      |                             |                                                                                                                                                                            |                   |                            |               |
+|      8      |                             |                                                                                                                                                                            |                   |                            |               |
+|      9      |                             |                                                                                                                                                                            |                   |                            |               |
+|      10     |                             |                                                                                                                                                                            |                   |                            |               |
+|             |                             |                                                                                                                                                                            |                   |                            |               |
 ## Test Plan
 
 # Criteria C: Development
