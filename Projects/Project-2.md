@@ -69,6 +69,9 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 # Criteria C: Development
 
 ## List of techniques used
+## Flow Diagrams
+Simple, Medium, Complex
+## How Data is Arranged In CSV File
 
 ## Development
 
