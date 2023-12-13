@@ -64,13 +64,18 @@ _TOK Connection: To what extent does ```the use of data science``` in climate re
 |      9      |                             |                                                                                                                                                                            |                   |                            |               |
 |      10     |                             |                                                                                                                                                                            |                   |                            |               |
 |             |                             |                                                                                                                                                                            |                   |                            |               |
+## Flow Diagrams
+Simple, Medium, Complex
+### API upload (Medium)
+![image](https://github.com/Amine-Itani/Unit-2/assets/123438294/4484d981-bc54-4360-9bdf-2f9134e81e6e)
+
+### Smoothing and Calculating Uncertainty for Errorbar Graph (Complex)
 ## Test Plan
 
 # Criteria C: Development
 
 ## List of techniques used
-## Flow Diagrams
-Simple, Medium, Complex
+
 ## How Data is Arranged In CSV File
 
 ## Development
