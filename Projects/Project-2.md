@@ -1,4 +1,3 @@
-![image](https://github.com/Amine-Itani/Unit-2/assets/123438294/527591f6-811f-4fff-9203-295d5d4009af)![image](https://github.com/Amine-Itani/Unit-2/assets/123438294/3bc3dddf-e43a-45de-822d-cbff699d3175)
 <sub>Illustration from https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cnet.com%2Fhealth%2Fsleep%2Ftop-8-signs-of-sleep-apnea-and-what-to-do-about-it%2F&psig=AOvVaw01pxsWo-K3jwdEhUMPkGfy&ust=1702626680430000&source=images&cd=vfe&ved=0CAUQjB1qFwoTCLDltuW4joMDFQAAAAAdAAAAABAE </sub>
 
 # Unit 2: A Distributed Weather Station for ISAK
